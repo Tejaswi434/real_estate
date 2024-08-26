@@ -1,23 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Layout, Menu, Card, Input } from 'antd';
+import { Layout, Card, Input } from 'antd';
 import { UserOutlined, LogoutOutlined } from '@ant-design/icons';
-import "./Landingpage.css";
-import Login from './Login';
-import defaultImages from './LandingData';
-import FooterPage from './FooterPage';
+import LoginPage from './LoginPage';
+import defaultImages from './DefaultImages';
+import '../Styles/LandingPage.css';
+
 
 const { Search } = Input;
 const { Meta } = Card;
-const { Header, Content } = Layout;
+const { Content } = Layout;
 
-const items = (navigate) => [
-    { key: '0', label: 'Sign In', onClick: () => navigate('/login') },
-    { key: '1', label: <UserOutlined style={{ fontSize: '24px' }} /> },
-    { key: '2', label: <LogoutOutlined style={{ fontSize: '24px' }} /> }
-];
-
-const Landingpage = () => {
+const LandingPage = () => {
     const navigate = useNavigate();
     const [isLoginVisible, setIsLoginVisible] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
@@ -49,15 +43,13 @@ const Landingpage = () => {
 
     return (
         <Layout>
-
-            <Login visible={isLoginVisible} onClose={handleLoginClose} />
+            <LoginPage visible={isLoginVisible} onClose={handleLoginClose} />
             <Content
                 style={{
                     padding: '0 24px',
                     marginTop: '64px', // Space for fixed header
                 }}
             >
-                <Login />
                 <div className="background">
                     <Search
                         style={{ marginTop: "30px", width: "70%" }}
@@ -98,11 +90,8 @@ const Landingpage = () => {
                     }
                 </div>
             </Content>
-
-
-
         </Layout>
     );
 };
 
-export default Landingpage;
+export default LandingPage;

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./FooterStyle.css";
+import '../Styles/FooterStyle.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faFacebookF,
@@ -10,102 +10,58 @@ import {
 
 const FooterPage = () => {
     return (
-        <footer className={styles.footer}>
-            <div className={styles.container}>
-                <div className={styles.row}>
-                    <div className={styles.footerCol}>
+        <footer className="footer">
+            <div className="container">
+                <div className="row">
+                    <div className="footerCol">
                         <h4>Company</h4>
                         <ul>
-                            <li>
-                                <a href="#">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#">Our Services</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="#">Affiliate Program</a>
-                            </li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
                         </ul>
                     </div>
-                    <div className={styles.footerCol}>
+                    <div className="footerCol">
                         <h4>Get Help</h4>
                         <ul>
-                            <li>
-                                <a href="#">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="#">Customer Service</a>
-                            </li>
-                            <li>
-                                <a href="#">Booking Appointments</a>
-                            </li>
-                            <li>
-                                <a href="#">siteMaps</a>
-                            </li>
-                            <li>
-                                <a href="#">Articles</a>
-                            </li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Booking Appointments</a></li>
+                            <li><a href="#">siteMaps</a></li>
+                            <li><a href="#">Articles</a></li>
                         </ul>
                     </div>
-                    <div className={styles.footerCol}>
+                    <div className="footerCol">
                         <h4>Our Partners</h4>
                         <ul>
-                            <li>
-                                <a href="#">Naukri.com - Jobs in India</a>
-                            </li>
-                            <li>
-                                <a href="#">Jeevansathi.com - Matrimonials</a>
-                            </li>
-                            <li>
-                                <a href="#">Shiksha.com - Education Career Info</a>
-                            </li>
-                            <li>
-                                <a href="#">PaisaBazaar.com</a>
-                            </li>
+                            <li><a href="#">Naukri.com - Jobs in India</a></li>
+                            <li><a href="#">Jeevansathi.com - Matrimonials</a></li>
+                            <li><a href="#">Shiksha.com - Education Career Info</a></li>
+                            <li><a href="#">PaisaBazaar.com</a></li>
                         </ul>
                     </div>
-                    <div className={styles.footerCol}>
+                    <div className="footerCol">
                         <h4>Contact Us</h4>
                         <ul>
-                            <li>
-                                <a href="#">Toll Free - 1800 41 99099</a>
-                            </li>
-                            <li>
-                                <a href="#">9:30 AM to 6:30 PM (Mon-Sun)</a>
-                            </li>
-                            <li>
-                                <a href="#">Email - Miraclesoft@example.com</a>
-                            </li>
+                            <li><a href="#">Toll Free - 1800 41 99099</a></li>
+                            <li><a href="#">9:30 AM to 6:30 PM (Mon-Sun)</a></li>
+                            <li><a href="#">Email - Miraclesoft@example.com</a></li>
                         </ul>
                     </div>
-                    <div className={styles.footerCol}>
+                    <div className="footerCol">
                         <h4>Follow Us</h4>
-                        <div className={styles.socialLinks}>
-                            <a
-                                href="https://www.facebook.com/rkitsoftware/"
-                                aria-label="Facebook"
-                            >
+                        <div className="socialLinks">
+                            <a href="https://www.facebook.com/rkitsoftware/" aria-label="Facebook">
                                 <FontAwesomeIcon icon={faFacebookF} />
                             </a>
-                            <a
-                                href="https://twitter.com/miraclesoft?lang=en"
-                                aria-label="Twitter"
-                            >
+                            <a href="https://twitter.com/miraclesoft?lang=en" aria-label="Twitter">
                                 <FontAwesomeIcon icon={faTwitter} />
                             </a>
-                            <a
-                                href="https://www.instagram.com/team_mss/?hl=en"
-                                aria-label="Instagram"
-                            >
+                            <a href="https://www.instagram.com/team_mss/?hl=en" aria-label="Instagram">
                                 <FontAwesomeIcon icon={faInstagram} />
                             </a>
-                            <a
-                                href="https://www.linkedin.com/company/miraclesoft/posts/?feedView=all"
-                                aria-label="LinkedIn"
-                            >
+                            <a href="https://www.linkedin.com/company/miraclesoft/posts/?feedView=all" aria-label="LinkedIn">
                                 <FontAwesomeIcon icon={faLinkedinIn} />
                             </a>
                         </div>

@@ -99,14 +99,14 @@
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically within the container */
   height: calc(100vh - 64px); /* Full viewport height minus header */
-  padding: 0 24px; /* Horizontal padding */
+  /* padding: 0 24px;  */
   box-sizing: border-box; /* Include padding in the element's total width */
 }
 
 .landingSearch {
   width: 100%; /* Full width of its container */
   max-width: 600px; /* Maximum width for larger screens */
-  margin: 0; /* Reset margin to avoid any extra space */
+  margin: 0;
 }
 
 @media (max-width: 1200px) {
