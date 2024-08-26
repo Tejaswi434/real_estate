@@ -1,26 +1,30 @@
 .background {
   background-image: url("https://static.rdc.moveaws.com/images/hero/default/2021-11/webp/hp-hero-desktop-xl-2x.webp");
-  height: 70vh; /* Adjust as needed */
-  width: 100vw; /* Full viewport width */
-  background-size: cover; /* Cover the entire element */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent image from repeating */
-  margin-left: 0px; /* Ensure no extra margin is applied */
-  padding: 0; /* Ensure no extra padding is applied */
-  overflow: hidden; /* Hide any overflow if necessary */
+  height: 36vh;
+  width: 100vw; 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  margin-left: 0px;
+  padding: 0; 
+  overflow: hidden;
+}
+/* landing page button color changed */
+.landingSearch .ant-input-search-button {
+  background-color: #545454;
+  color: #fff; 
 }
 
-.landingSearch {
-  width: 25%;
-  margin-top: 27%;
-  margin-left: 7%;
+.landingSearch .ant-input-search-button:hover {
+  background-color: #333 !important; 
 }
+
 .ant-card .ant-card-cover > * {
   display: block;
   width: 100%;
   border-radius: 8px 8px 0 0;
-  height: 221px; /* Ensure this height is consistent */
-  object-fit: cover; /* This ensures images cover the area */
+  height: 26vh; 
+  object-fit: cover; 
 }
 
 .ant-menu-horizontal > .ant-menu-item {
@@ -29,9 +33,7 @@
 .element.style {
   padding: 0 24px;
 }
-/* General styles */
 
-/* Media queries */
 @media (max-width: 768px) {
   .landingSearch {
     max-width: 100%;
@@ -39,38 +41,33 @@
 
   .ant-card {
     width: 100%;
-    max-width: 100%; /* Ensure cards use available space */
+    max-width: 100%; 
   }
 }
-
-/* heading styles nav bar   management */
-
-/* General heading styles */
 .heading {
   color: white;
   font-weight: bold;
-  font-size: 23px; /* Default font size for large screens */
-  text-align: center; /* Center align text */
+  font-size: 23px; 
+  text-align: center; 
   padding: 10px;
   box-sizing: border-box;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 1200px) {
   .heading {
-    font-size: 20px; /* Font size for medium screens */
+    font-size: 20px; 
   }
 }
 
 @media (max-width: 992px) {
   .heading {
-    font-size: 18px; /* Font size for tablets */
+    font-size: 18px; 
   }
 }
 
 @media (max-width: 768px) {
   .heading {
-    font-size: 16px; /* Font size for smaller tablets and large phones */
+    font-size: 16px;
   }
 }
 
@@ -82,25 +79,23 @@
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center the cards horizontally */
-  gap: 16px; /* Space between cards */
+  justify-content: center; 
+  gap: 16px; 
 }
 
 .card-item {
   width: 100%;
-  max-width: 300px; /* Maximum width of the card */
-  margin-bottom: 16px; /* Space below each card */
+  max-width: 300px;
+  margin-bottom: 16px; 
 }
 
-/* Media queries for responsiveness */
-/* Container for centering the Search bar */
 .landingSearchContainer {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically within the container */
-  height: calc(100vh - 64px); /* Full viewport height minus header */
-  /* padding: 0 24px;  */
-  box-sizing: border-box; /* Include padding in the element's total width */
+  justify-content: center;
+  align-items: center; 
+  height: calc(100vh - 64px); 
+  box-sizing: border-box; 
+  background-color: #DDD;
 }
 
 .landingSearch {
@@ -182,3 +177,4 @@
     grid-template-columns: repeat(2, 1fr); /* 1 column for very small screens */
   }
 }
+

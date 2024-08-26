@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { Layout, Menu, Card, Input } from 'antd';
+import React from 'react';
+import { Layout, Menu } from 'antd';
 import { UserOutlined, LogoutOutlined } from '@ant-design/icons';
 
-const { Header, Content } = Layout;
+const { Header } = Layout;
 
-const items =
-    () => [
-        { key: '0', label: 'Sign In' },
-        { key: '1', label: <UserOutlined style={{ fontSize: '24px' }} /> },
-        { key: '2', label: <LogoutOutlined style={{ fontSize: '24px' }} /> }
-    ];
+const items = () => [
+    { key: '0', label: 'Sign In' },
+    { key: '1', label: <UserOutlined style={{ fontSize: '24px' }} /> },
+    { key: '2', label: <LogoutOutlined style={{ fontSize: '24px' }} /> }
+];
 
 function HeaderPage() {
     return (
@@ -23,11 +22,13 @@ function HeaderPage() {
                     position: 'fixed',
                     top: 0,
                     left: 0,
-                    width: '100vw', // Use viewport width to ensure full width
+                    width: '100vw',
                     zIndex: 1000,
                     height: '64px',
-                    boxSizing: 'border-box', // Ensures padding is included in width
-                    overflow: 'hidden' // Prevent horizontal overflow
+                    boxSizing: 'border-box',
+                    overflow: 'hidden',
+                    backgroundColor: '#0d416b', // Set the background color here
+                   
                 }}
             >
                 <div className='heading'>Real Estate Management System</div>
@@ -40,13 +41,13 @@ function HeaderPage() {
                         flex: 1,
                         justifyContent: 'flex-end',
                         border: 'none',
-                        color: '#fff'
+                        color: '#fff',
+                        backgroundColor:'#0d416b'
                     }}
                 />
             </Header>
-
         </div>
-    )
+    );
 }
 
-export default HeaderPage
+export default HeaderPage;

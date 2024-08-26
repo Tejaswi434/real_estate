@@ -1,0 +1,45 @@
+.financial-assistant-container {
+    background-image: url("https://plus.unsplash.com/premium_photo-1684175656320-5c3f701c082c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmxhdHxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    min-height: 100vh; /* Ensure container takes up full height */
+  }
+  
+  .scrolling-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .scrolling-cards {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll-left 30s linear infinite;
+  }
+  
+  .scrolling-cards:hover {
+    animation-play-state: paused; /* Pause the animation on hover over the container */
+  }
+  
+  .scrolling-card {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust the width of the card as needed */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 30px; /* Spacing between cards */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

@@ -5,6 +5,7 @@ import { UserOutlined, LogoutOutlined } from '@ant-design/icons';
 import LoginPage from './LoginPage';
 import defaultImages from './DefaultImages';
 import '../Styles/LandingPage.css';
+import useGet from '../ServiceHelper/Api/useGet'
 
 
 const { Search } = Input;
@@ -16,6 +17,8 @@ const LandingPage = () => {
     const [isLoginVisible, setIsLoginVisible] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredImages, setFilteredImages] = useState(defaultImages);
+    const [getUrl, setGetUrl] = useState('')
+    const { data, loading, error } = useGet('users/hi')
 
     const handleSearch = (value) => {
         setSearchQuery(value);
@@ -46,14 +49,13 @@ const LandingPage = () => {
             <LoginPage visible={isLoginVisible} onClose={handleLoginClose} />
             <Content
                 style={{
-                    padding: '0 24px',
-                    marginTop: '64px', // Space for fixed header
+                    marginTop: '64px',
                 }}
             >
                 <div className="background">
                     <Search
-                        style={{ marginTop: "30px", width: "70%" }}
-                        placeholder="input search text"
+                        style={{ marginTop: "30px", width: "70%", marginLeft: "8vh" }}
+                        placeholder="Search with cities"
                         allowClear
                         enterButton="Search"
                         size="large"
@@ -76,10 +78,10 @@ const LandingPage = () => {
                                     title={item.city}
                                     description={
                                         <div>
-                                            <p><strong>Area:</strong> {item.area}</p>
-                                            <p><strong>Price:</strong> {item.price}</p>
-                                            <p><strong>Description:</strong> {item.Description}</p>
-                                            <p><strong>Key Factors:</strong> {item.keyFactors}</p>
+                                            <p><strong></strong> {item.area}</p>
+                                            <p><strong></strong> {item.price}</p>
+                                            {/* <p><strong>Description:</strong> {item.Description}</p>
+                                            <p><strong>Key Factors:</strong> {item.keyFactors}</p> */}
                                         </div>
                                     }
                                 />
