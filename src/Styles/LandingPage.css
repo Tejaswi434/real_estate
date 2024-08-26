@@ -1,0 +1,184 @@
+.background {
+  background-image: url("https://static.rdc.moveaws.com/images/hero/default/2021-11/webp/hp-hero-desktop-xl-2x.webp");
+  height: 70vh; /* Adjust as needed */
+  width: 100vw; /* Full viewport width */
+  background-size: cover; /* Cover the entire element */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  margin-left: 0px; /* Ensure no extra margin is applied */
+  padding: 0; /* Ensure no extra padding is applied */
+  overflow: hidden; /* Hide any overflow if necessary */
+}
+
+.landingSearch {
+  width: 25%;
+  margin-top: 27%;
+  margin-left: 7%;
+}
+.ant-card .ant-card-cover > * {
+  display: block;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  height: 221px; /* Ensure this height is consistent */
+  object-fit: cover; /* This ensures images cover the area */
+}
+
+.ant-menu-horizontal > .ant-menu-item {
+  color: white !important;
+}
+.element.style {
+  padding: 0 24px;
+}
+/* General styles */
+
+/* Media queries */
+@media (max-width: 768px) {
+  .landingSearch {
+    max-width: 100%;
+  }
+
+  .ant-card {
+    width: 100%;
+    max-width: 100%; /* Ensure cards use available space */
+  }
+}
+
+/* heading styles nav bar   management */
+
+/* General heading styles */
+.heading {
+  color: white;
+  font-weight: bold;
+  font-size: 23px; /* Default font size for large screens */
+  text-align: center; /* Center align text */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 20px; /* Font size for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .heading {
+    font-size: 18px; /* Font size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 16px; /* Font size for smaller tablets and large phones */
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 14px; /* Font size for small phones */
+  }
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards horizontally */
+  gap: 16px; /* Space between cards */
+}
+
+.card-item {
+  width: 100%;
+  max-width: 300px; /* Maximum width of the card */
+  margin-bottom: 16px; /* Space below each card */
+}
+
+/* Media queries for responsiveness */
+/* Container for centering the Search bar */
+.landingSearchContainer {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically within the container */
+  height: calc(100vh - 64px); /* Full viewport height minus header */
+  padding: 0 24px; /* Horizontal padding */
+  box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+.landingSearch {
+  width: 100%; /* Full width of its container */
+  max-width: 600px; /* Maximum width for larger screens */
+  margin: 0; /* Reset margin to avoid any extra space */
+}
+
+@media (max-width: 1200px) {
+  .landingSearch {
+    max-width: 500px; /* Adjust width for medium screens */
+    margin-top: 1200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .landingSearch {
+    max-width: 400px; /* Adjust width for smaller screens */
+    margin-top: 123px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landingSearch {
+    max-width: 300px;
+    margin-top: 123px; /* Adjust width for mobile screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .landingSearch {
+    max-width: 90%; /* Nearly full width on very small screens */
+    margin-top: 123px;
+  }
+}
+
+/* styles12 */
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default to 4 columns */
+  gap: 16px; /* Space between cards */
+  padding: 16px; /* Padding around the grid */
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+.card-item {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for card */
+  border-radius: 8px; /* Optional rounded corners for card */
+}
+
+.card-item img {
+  width: 100%;
+  height: auto; /* Adjust height to auto to maintain aspect ratio */
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr); /* 2 columns for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr); /* 1 column for mobile screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr); /* 1 column for very small screens */
+  }
+}
